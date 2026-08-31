@@ -57,7 +57,7 @@ namespace UUPDownload
                 {
                     case LoggingLevel.Warning:
                         msg = "  Warning  ";
-                        Console.ForegroundColor = ConsoleColor.Yellow;
+                        Console.ForegroundColor = ConsoleColor.Magenta;
                         break;
 
                     case LoggingLevel.Error:
@@ -67,7 +67,7 @@ namespace UUPDownload
 
                     case LoggingLevel.Information:
                         msg = "Information";
-                        Console.ForegroundColor = Foreground;
+                        Console.ForegroundColor = ConsoleColor.Cyan;
                         break;
                 }
 
