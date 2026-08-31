@@ -171,7 +171,8 @@ namespace UnifiedUpdatePlatform.Services.WindowsUpdate.Downloads
             GeneralDownloadProgress generalDownloadProgress = new()
             {
                 DownloadedStatus = new FileDownloadStatus[threads],
-                NumFiles = items.Count
+                NumFiles = items.Count,
+                EstimatedTotalBytes = items.Sum(i => i.FileSize)
             };
 
             bool result = true;
