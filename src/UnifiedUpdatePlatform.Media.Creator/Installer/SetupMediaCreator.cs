@@ -38,7 +38,7 @@ namespace UnifiedUpdatePlatform.Media.Creator.Installer
             IEnumerable<CompDB> CompositionDatabases,
             TempManager tempManager,
             ProgressCallback progressCallback = null,
-            string edition = null)
+            string? edition = null)
         {
             bool result = true;
             string BaseESD = null;

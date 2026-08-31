@@ -27,27 +27,27 @@ namespace UnifiedUpdatePlatform.Services.Composition.Database
     public class AppxPackage
     {
         [XmlAttribute(AttributeName = "AppXPackageType")]
-        public string AppXPackageType
+        public string? AppXPackageType
         {
             get; set;
         }
         [XmlAttribute(AttributeName = "FullName")]
-        public string FullName
+        public string? FullName
         {
             get; set;
         }
         [XmlAttribute(AttributeName = "FamilyName")]
-        public string FamilyName
+        public string? FamilyName
         {
             get; set;
         }
         [XmlElement(ElementName = "Payload", Namespace = "http://schemas.microsoft.com/embedded/2004/10/ImageUpdate")]
-        public Payload Payload
+        public Payload? Payload
         {
             get; set;
         }
         [XmlElement(ElementName = "LicenseData", Namespace = "http://schemas.microsoft.com/embedded/2004/10/ImageUpdate")]
-        public string LicenseData
+        public string? LicenseData
         {
             get; set;
         }

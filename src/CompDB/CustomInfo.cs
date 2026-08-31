@@ -27,13 +27,13 @@ namespace UnifiedUpdatePlatform.Services.Composition.Database
     public class CustomInfo
     {
         [XmlAttribute(AttributeName = "Key", Namespace = "http://schemas.microsoft.com/embedded/2004/10/ImageUpdate")]
-        public string Key
+        public string? Key
         {
             get; set;
         }
 
         [XmlText]
-        public string Value
+        public string? Value
         {
             get; set;
         }

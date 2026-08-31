@@ -28,7 +28,7 @@ namespace UnifiedUpdatePlatform.Services.Composition.Database
     public class Dependencies
     {
         [XmlElement(ElementName = "Feature", Namespace = "http://schemas.microsoft.com/embedded/2004/10/ImageUpdate")]
-        public List<Feature> Feature
+        public List<Feature>? Feature
         {
             get; set;
         }

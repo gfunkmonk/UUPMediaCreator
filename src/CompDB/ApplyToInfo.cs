@@ -28,7 +28,7 @@ namespace UnifiedUpdatePlatform.Services.Composition.Database
     public class ApplyToInfo
     {
         [XmlElement(ElementName = "ApplyTo", Namespace = "http://schemas.microsoft.com/embedded/2004/10/ImageUpdate")]
-        public List<ApplyTo> ApplyTo
+        public List<ApplyTo>? ApplyTo
         {
             get; set;
         }

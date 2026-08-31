@@ -28,12 +28,12 @@ namespace UnifiedUpdatePlatform.Services.Composition.Database
     public class Tags
     {
         [XmlElement(ElementName = "Tag", Namespace = "http://schemas.microsoft.com/embedded/2004/10/ImageUpdate")]
-        public List<Tag> Tag
+        public List<Tag>? Tag
         {
             get; set;
         }
         [XmlAttribute(AttributeName = "Type", Namespace = "http://schemas.microsoft.com/embedded/2004/10/ImageUpdate")]
-        public string Type
+        public string? Type
         {
             get; set;
         }

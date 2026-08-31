@@ -28,7 +28,7 @@ namespace UnifiedUpdatePlatform.Services.Composition.Database
     public class Payload
     {
         [XmlElement(ElementName = "PayloadItem", Namespace = "http://schemas.microsoft.com/embedded/2004/10/ImageUpdate")]
-        public List<PayloadItem> PayloadItem
+        public List<PayloadItem>? PayloadItem
         {
             get; set;
         }

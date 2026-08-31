@@ -11,28 +11,28 @@ namespace UnifiedUpdatePlatform.Services.Imaging
 {
     public class WimgApiImaging : IImaging
     {
-        public bool AddFileToImage(string wimFile, int imageIndex, string fileToAdd, string destination, IImaging.ProgressCallback progressCallback = null)
+        public bool AddFileToImage(string wimFile, int imageIndex, string fileToAdd, string destination, IImaging.ProgressCallback? progressCallback = null)
         {
             return false;
         }
 
-        public bool UpdateFilesInImage(string wimFile, int imageIndex, IEnumerable<(string fileToAdd, string destination)> fileList, IImaging.ProgressCallback progressCallback = null)
+        public bool UpdateFilesInImage(string wimFile, int imageIndex, IEnumerable<(string fileToAdd, string destination)> fileList, IImaging.ProgressCallback? progressCallback = null)
         {
             return false;
         }
 
-        public bool DeleteFileFromImage(string wimFile, int imageIndex, string fileToRemove, IImaging.ProgressCallback progressCallback = null)
+        public bool DeleteFileFromImage(string wimFile, int imageIndex, string fileToRemove, IImaging.ProgressCallback? progressCallback = null)
         {
             return false;
         }
 
-        public bool EnumerateFiles(string wimFile, int imageIndex, string path, out string[] entries)
+        public bool EnumerateFiles(string wimFile, int imageIndex, string path, out string[]? entries)
         {
             entries = null;
             return false;
         }
 
-        public bool RenameFileInImage(string wimFile, int imageIndex, string sourceFilePath, string destinationFilePath, IImaging.ProgressCallback progressCallback = null)
+        public bool RenameFileInImage(string wimFile, int imageIndex, string sourceFilePath, string destinationFilePath, IImaging.ProgressCallback? progressCallback = null)
         {
             return false;
         }
@@ -46,14 +46,14 @@ namespace UnifiedUpdatePlatform.Services.Imaging
             "System Volume Information"
         };
 
-        private string[] BuildExclusionList(string WorkingDirectory = null)
+        private string[] BuildExclusionList(string? WorkingDirectory = null)
         {
             return WorkingDirectory == null
                 ? Array.Empty<string>()
                 : ExclusionList.Select(excludedItem => Path.Combine(WorkingDirectory.EndsWith(":") ? WorkingDirectory + @"\" : WorkingDirectory, excludedItem)).ToArray();
         }
 
-        private WimMessageCallback GetWimMessageCallback(string title, string WorkingDirectory = null, IImaging.ProgressCallback progressCallback = null)
+        private WimMessageCallback GetWimMessageCallback(string title, string? WorkingDirectory = null, IImaging.ProgressCallback? progressCallback = null)
         {
             int directoriesScanned = 0;
             int filesScanned = 0;
@@ -133,7 +133,7 @@ namespace UnifiedUpdatePlatform.Services.Imaging
             return callback;
         }
 
-        public bool ApplyImage(string wimFile, int imageIndex, string OutputDirectory, IEnumerable<string> referenceWIMs = null, bool PreserveACL = true, IImaging.ProgressCallback progressCallback = null)
+        public bool ApplyImage(string wimFile, int imageIndex, string OutputDirectory, IEnumerable<string>? referenceWIMs = null, bool PreserveACL = true, IImaging.ProgressCallback? progressCallback = null)
         {
             if (!RuntimeInformation.IsOSPlatform(OSPlatform.Windows))
             {
@@ -203,10 +203,10 @@ namespace UnifiedUpdatePlatform.Services.Imaging
             string imageFlag,
             string InputDirectory,
             TempManager tempManager,
-            string imageDisplayName = null,
-            string imageDisplayDescription = null,
+            string? imageDisplayName = null,
+            string? imageDisplayDescription = null,
             WimCompressionType compressionType = WimCompressionType.Lzx,
-            IImaging.ProgressCallback progressCallback = null,
+            IImaging.ProgressCallback? progressCallback = null,
             int UpdateFrom = -1,
             bool PreserveACL = true)
         {
@@ -268,7 +268,7 @@ namespace UnifiedUpdatePlatform.Services.Imaging
             return false;
         }
 
-        public bool ExportImage(string wimFile, string destinationWimFile, int imageIndex, IEnumerable<string> referenceWIMs = null, WimCompressionType compressionType = WimCompressionType.Lzx, IImaging.ProgressCallback progressCallback = null, ExportFlags exportFlags = ExportFlags.None)
+        public bool ExportImage(string wimFile, string destinationWimFile, int imageIndex, IEnumerable<string>? referenceWIMs = null, WimCompressionType compressionType = WimCompressionType.Lzx, IImaging.ProgressCallback? progressCallback = null, ExportFlags exportFlags = ExportFlags.None)
         {
             if (!RuntimeInformation.IsOSPlatform(OSPlatform.Windows))
             {
@@ -376,7 +376,7 @@ namespace UnifiedUpdatePlatform.Services.Imaging
             return true;
         }
 
-        public bool GetWIMImageInformation(string wimFile, int imageIndex, out WIMInformationXML.IMAGE image)
+        public bool GetWIMImageInformation(string wimFile, int imageIndex, out WIMInformationXML.IMAGE? image)
         {
             image = null;
             if (!RuntimeInformation.IsOSPlatform(OSPlatform.Windows))
@@ -407,7 +407,7 @@ namespace UnifiedUpdatePlatform.Services.Imaging
             return true;
         }
 
-        public bool GetWIMInformation(string wimFile, out WIMInformationXML.WIM wim)
+        public bool GetWIMInformation(string wimFile, out WIMInformationXML.WIM? wim)
         {
             wim = null;
             if (!RuntimeInformation.IsOSPlatform(OSPlatform.Windows))

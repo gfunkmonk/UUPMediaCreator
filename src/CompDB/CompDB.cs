@@ -28,122 +28,122 @@ namespace UnifiedUpdatePlatform.Services.Composition.Database
     public class CompDB
     {
         [XmlElement(ElementName = "Tags", Namespace = "http://schemas.microsoft.com/embedded/2004/10/ImageUpdate")]
-        public Tags Tags
+        public Tags? Tags
         {
             get; set;
         }
         [XmlElement(ElementName = "Features", Namespace = "http://schemas.microsoft.com/embedded/2004/10/ImageUpdate")]
-        public Features Features
+        public Features? Features
         {
             get; set;
         }
         [XmlAttribute(AttributeName = "xsi", Namespace = "http://www.w3.org/2000/xmlns/")]
-        public string Xsi
+        public string? Xsi
         {
             get; set;
         }
         [XmlAttribute(AttributeName = "xsd", Namespace = "http://www.w3.org/2000/xmlns/")]
-        public string Xsd
+        public string? Xsd
         {
             get; set;
         }
         [XmlAttribute(AttributeName = "CreatedDate", Namespace = "http://schemas.microsoft.com/embedded/2004/10/ImageUpdate")]
-        public string CreatedDate
+        public string? CreatedDate
         {
             get; set;
         }
         [XmlAttribute(AttributeName = "Revision", Namespace = "http://schemas.microsoft.com/embedded/2004/10/ImageUpdate")]
-        public string Revision
+        public string? Revision
         {
             get; set;
         }
         [XmlAttribute(AttributeName = "SchemaVersion", Namespace = "http://schemas.microsoft.com/embedded/2004/10/ImageUpdate")]
-        public string SchemaVersion
+        public string? SchemaVersion
         {
             get; set;
         }
         [XmlAttribute(AttributeName = "Product", Namespace = "http://schemas.microsoft.com/embedded/2004/10/ImageUpdate")]
-        public string Product
+        public string? Product
         {
             get; set;
         }
         [XmlAttribute(AttributeName = "BuildID", Namespace = "http://schemas.microsoft.com/embedded/2004/10/ImageUpdate")]
-        public string BuildID
+        public string? BuildID
         {
             get; set;
         }
         [XmlAttribute(AttributeName = "BuildInfo", Namespace = "http://schemas.microsoft.com/embedded/2004/10/ImageUpdate")]
-        public string BuildInfo
+        public string? BuildInfo
         {
             get; set;
         }
         [XmlAttribute(AttributeName = "OSVersion", Namespace = "http://schemas.microsoft.com/embedded/2004/10/ImageUpdate")]
-        public string OSVersion
+        public string? OSVersion
         {
             get; set;
         }
         [XmlAttribute(AttributeName = "BuildArch", Namespace = "http://schemas.microsoft.com/embedded/2004/10/ImageUpdate")]
-        public string BuildArch
+        public string? BuildArch
         {
             get; set;
         }
         [XmlAttribute(AttributeName = "ReleaseType", Namespace = "http://schemas.microsoft.com/embedded/2004/10/ImageUpdate")]
-        public string ReleaseType
+        public string? ReleaseType
         {
             get; set;
         }
         [XmlAttribute(AttributeName = "Type", Namespace = "http://schemas.microsoft.com/embedded/2004/10/ImageUpdate")]
-        public string Type
+        public string? Type
         {
             get; set;
         }
         [XmlAttribute(AttributeName = "Name", Namespace = "http://schemas.microsoft.com/embedded/2004/10/ImageUpdate")]
-        public string Name
+        public string? Name
         {
             get; set;
         }
         [XmlAttribute(AttributeName = "xmlns", Namespace = "http://schemas.microsoft.com/embedded/2004/10/ImageUpdate")]
-        public string Xmlns
+        public string? Xmlns
         {
             get; set;
         }
         [XmlElement(ElementName = "Packages", Namespace = "http://schemas.microsoft.com/embedded/2004/10/ImageUpdate")]
-        public Packages Packages
+        public Packages? Packages
         {
             get; set;
         }
         [XmlElement(ElementName = "AppX", Namespace = "http://schemas.microsoft.com/embedded/2004/10/ImageUpdate")]
-        public Appx AppX
+        public Appx? AppX
         {
             get; set;
         }
         [XmlElement(ElementName = "MSConditionalFeatures", Namespace = "http://schemas.microsoft.com/embedded/2004/10/ImageUpdate")]
-        public MSConditionalFeatures MSConditionalFeatures
+        public MSConditionalFeatures? MSConditionalFeatures
         {
             get; set;
         }
         [XmlAttribute(AttributeName = "TargetBuildID", Namespace = "http://schemas.microsoft.com/embedded/2004/10/ImageUpdate")]
-        public string TargetBuildID
+        public string? TargetBuildID
         {
             get; set;
         }
         [XmlAttribute(AttributeName = "TargetBuildInfo", Namespace = "http://schemas.microsoft.com/embedded/2004/10/ImageUpdate")]
-        public string TargetBuildInfo
+        public string? TargetBuildInfo
         {
             get; set;
         }
         [XmlAttribute(AttributeName = "TargetOSVersion", Namespace = "http://schemas.microsoft.com/embedded/2004/10/ImageUpdate")]
-        public string TargetOSVersion
+        public string? TargetOSVersion
         {
             get; set;
         }
         [XmlAttribute(AttributeName = "UUPProduct", Namespace = "http://schemas.microsoft.com/embedded/2004/10/ImageUpdate")]
-        public string UUPProduct
+        public string? UUPProduct
         {
             get; set;
         }
         [XmlAttribute(AttributeName = "UUPProductVersion", Namespace = "http://schemas.microsoft.com/embedded/2004/10/ImageUpdate")]
-        public string UUPProductVersion
+        public string? UUPProductVersion
         {
             get; set;
         }

@@ -50,7 +50,7 @@ namespace Cabinet
         /// </summary>
         /// <param name="InputFile">Input cabinet file</param>
         /// <param name="OutputDirectory">Output directory</param>
-        public static void ExtractCabinet(string InputFile, string OutputDirectory, Action<int, string> progressCallBack = null)
+        public static void ExtractCabinet(string InputFile, string OutputDirectory, Action<int, string>? progressCallBack = null)
         {
             using FileStream strm = File.OpenRead(InputFile);
             Cabinet cabFile = new(strm);
@@ -68,7 +68,7 @@ namespace Cabinet
         /// </summary>
         /// <param name="InputFile">Input cabinet file</param>
         /// <param name="OutputDirectory">Output directory</param>
-        public static void ExtractCabinet(Cabinet cabFile, string OutputDirectory, Action<int, string> progressCallBack = null)
+        public static void ExtractCabinet(Cabinet cabFile, string OutputDirectory, Action<int, string>? progressCallBack = null)
         {
             cabFile.ExtractAllFiles(OutputDirectory, progressCallBack);
         }
@@ -102,7 +102,7 @@ namespace Cabinet
         /// </summary>
         /// <param name="InputFile">Input cabinet file</param>
         /// <param name="OutputDirectory">Output directory</param>
-        public static void ExtractCabinet(Stream InputFile, string OutputDirectory, Action<int, string> progressCallBack = null)
+        public static void ExtractCabinet(Stream InputFile, string OutputDirectory, Action<int, string>? progressCallBack = null)
         {
             Cabinet cabFile = new(InputFile);
             ExtractCabinet(cabFile, OutputDirectory, progressCallBack);

@@ -27,32 +27,32 @@ namespace UnifiedUpdatePlatform.Services.Composition.Database
     public class ConditionalFeature
     {
         [XmlElement(ElementName = "Condition", Namespace = "http://schemas.microsoft.com/embedded/2004/10/ImageUpdate")]
-        public Condition Condition
+        public Condition? Condition
         {
             get; set;
         }
         [XmlAttribute(AttributeName = "InstallAction", Namespace = "http://schemas.microsoft.com/embedded/2004/10/ImageUpdate")]
-        public string InstallAction
+        public string? InstallAction
         {
             get; set;
         }
         [XmlAttribute(AttributeName = "FeatureID", Namespace = "http://schemas.microsoft.com/embedded/2004/10/ImageUpdate")]
-        public string FeatureID
+        public string? FeatureID
         {
             get; set;
         }
         [XmlAttribute(AttributeName = "FMID", Namespace = "http://schemas.microsoft.com/embedded/2004/10/ImageUpdate")]
-        public string FMID
+        public string? FMID
         {
             get; set;
         }
         [XmlElement(ElementName = "ConditionSet", Namespace = "http://schemas.microsoft.com/embedded/2004/10/ImageUpdate")]
-        public ConditionSet ConditionSet
+        public ConditionSet? ConditionSet
         {
             get; set;
         }
         [XmlAttribute(AttributeName = "UpdateAction", Namespace = "http://schemas.microsoft.com/embedded/2004/10/ImageUpdate")]
-        public string UpdateAction
+        public string? UpdateAction
         {
             get; set;
         }

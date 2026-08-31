@@ -50,19 +50,19 @@ namespace UnifiedUpdatePlatform.Common.Messaging
 
         public class ISOConversion
         {
-            public string ISOPath
+            public required string ISOPath
             {
                 get; set;
             }
-            public string UUPPath
+            public required string UUPPath
             {
                 get; set;
             }
-            public string Edition
+            public required string Edition
             {
                 get; set;
             }
-            public string LanguageCode
+            public required string LanguageCode
             {
                 get; set;
             }
@@ -90,7 +90,7 @@ namespace UnifiedUpdatePlatform.Common.Messaging
             {
                 get; set;
             }
-            public string SubOperation
+            public string? SubOperation
             {
                 get; set;
             }
@@ -110,11 +110,11 @@ namespace UnifiedUpdatePlatform.Common.Messaging
             {
                 get; set;
             }
-            public ISOConversionProgress ISOConversionProgress
+            public ISOConversionProgress? ISOConversionProgress
             {
                 get; set;
             }
-            public ISOConversion ISOConversion
+            public ISOConversion? ISOConversion
             {
                 get; set;
             }

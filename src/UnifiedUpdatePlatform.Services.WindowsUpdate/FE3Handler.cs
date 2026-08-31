@@ -507,7 +507,7 @@ namespace UnifiedUpdatePlatform.Services.WindowsUpdate
 
         #region File url specific functions
 
-        public static async Task<FileExchangeV3FileDownloadInformation> GetFileUrl(UpdateData updateData, string fileDigest, string token = null)
+        public static async Task<FileExchangeV3FileDownloadInformation> GetFileUrl(UpdateData updateData, string fileDigest, string? token = null)
         {
             (CGetExtendedUpdateInfo2Response.GetExtendedUpdateInfo2Response, string) result = await GetExtendedUpdateInfo2(token, updateData.Xml.UpdateIdentity.UpdateID, updateData.Xml.UpdateIdentity.RevisionNumber, updateData.CTAC);
 
@@ -530,7 +530,7 @@ namespace UnifiedUpdatePlatform.Services.WindowsUpdate
             return null;
         }
 
-        public static async Task<IEnumerable<FileExchangeV3FileDownloadInformation>> GetFileUrls(UpdateData updateData, string token = null)
+        public static async Task<IEnumerable<FileExchangeV3FileDownloadInformation>> GetFileUrls(UpdateData updateData, string? token = null)
         {
             (CGetExtendedUpdateInfo2Response.GetExtendedUpdateInfo2Response, string) result = await GetExtendedUpdateInfo2(token, updateData.Xml.UpdateIdentity.UpdateID, updateData.Xml.UpdateIdentity.RevisionNumber, updateData.CTAC);
 

@@ -378,7 +378,7 @@ namespace Cabinet
             return fileBlockMap;
         }
 
-        public void ExtractAllFiles(string OutputDirectory, Action<int, string> progressCallBack = null)
+        public void ExtractAllFiles(string OutputDirectory, Action<int, string>? progressCallBack = null)
         {
             // Cleanup existing files
             foreach (CabinetVolumeFile file in files)

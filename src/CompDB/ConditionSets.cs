@@ -27,7 +27,7 @@ namespace UnifiedUpdatePlatform.Services.Composition.Database
     public class ConditionSets
     {
         [XmlElement(ElementName = "ConditionSet", Namespace = "http://schemas.microsoft.com/embedded/2004/10/ImageUpdate")]
-        public ConditionSet ConditionSet
+        public ConditionSet? ConditionSet
         {
             get; set;
         }

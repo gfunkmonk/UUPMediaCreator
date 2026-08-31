@@ -27,17 +27,17 @@ namespace UnifiedUpdatePlatform.Services.Composition.Database
     public class ConditionSet
     {
         [XmlElement(ElementName = "Conditions", Namespace = "http://schemas.microsoft.com/embedded/2004/10/ImageUpdate")]
-        public Conditions Conditions
+        public Conditions? Conditions
         {
             get; set;
         }
         [XmlAttribute(AttributeName = "Operator", Namespace = "http://schemas.microsoft.com/embedded/2004/10/ImageUpdate")]
-        public string Operator
+        public string? Operator
         {
             get; set;
         }
         [XmlElement(ElementName = "ConditionSets", Namespace = "http://schemas.microsoft.com/embedded/2004/10/ImageUpdate")]
-        public ConditionSets ConditionSets
+        public ConditionSets? ConditionSets
         {
             get; set;
         }

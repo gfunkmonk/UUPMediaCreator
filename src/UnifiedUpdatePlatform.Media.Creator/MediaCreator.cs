@@ -53,7 +53,7 @@ namespace UnifiedUpdatePlatform.Media.Creator
             string VHDMountPath = null,
             string CurrentBackupVHD = null,
             ProgressCallback progressCallback = null,
-            string edition = null)
+            string? edition = null)
         {
             progressCallback?.Invoke(Common.Messaging.Common.ProcessPhase.ApplyingImage, true, 0, $"Applying {targetEdition.PlannedEdition.EditionName} - {targetEdition.PlannedEdition.AvailabilityType}");
 
@@ -288,7 +288,7 @@ namespace UnifiedUpdatePlatform.Media.Creator
             List<CompDB> CompositionDatabases,
             out List<EditionTarget> EditionTargets,
             TempManager tempManager,
-            ProgressCallback progressCallback = null)
+            ProgressCallback? progressCallback = null)
         {
             progressCallback?.Invoke(Common.Messaging.Common.ProcessPhase.ReadingMetadata, true, 0, "Acquiring Composition Databases");
 
@@ -379,7 +379,7 @@ namespace UnifiedUpdatePlatform.Media.Creator
             bool suppressAnyKeyPrompt,
             Common.Messaging.Common.CompressionType CompressionType,
             ProgressCallback progressCallback = null,
-            string Temp = null)
+            string? Temp = null)
         {
             bool result = true;
             string error = "";

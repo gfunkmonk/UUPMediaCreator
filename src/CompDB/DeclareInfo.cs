@@ -27,7 +27,7 @@ namespace UnifiedUpdatePlatform.Services.Composition.Database
     public class DeclareInfo
     {
         [XmlElement(ElementName = "Declare", Namespace = "http://schemas.microsoft.com/embedded/2004/10/ImageUpdate")]
-        public Declare Declare
+        public Declare? Declare
         {
             get; set;
         }

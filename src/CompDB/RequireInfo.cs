@@ -28,7 +28,7 @@ namespace UnifiedUpdatePlatform.Services.Composition.Database
     public class RequireInfo
     {
         [XmlElement(ElementName = "Require", Namespace = "http://schemas.microsoft.com/embedded/2004/10/ImageUpdate")]
-        public List<Require> Require
+        public List<Require>? Require
         {
             get; set;
         }

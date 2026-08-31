@@ -238,7 +238,7 @@ namespace UnifiedUpdatePlatform.Media.Creator.BootlegEditions
             string OutputInstallImage,
             Common.Messaging.Common.CompressionType CompressionType,
             TempManager tempManager,
-            ProgressCallback progressCallback = null)
+            ProgressCallback? progressCallback = null)
         {
             bool result = true;
             progressCallback?.Invoke(Common.Messaging.Common.ProcessPhase.ApplyingImage, true, 0, "Applying " + EditionID + " - Package Swap");

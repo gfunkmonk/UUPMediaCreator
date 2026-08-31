@@ -27,12 +27,12 @@ namespace UnifiedUpdatePlatform.Services.Composition.Database
     public class ApplyTo
     {
         [XmlAttribute(AttributeName = "Type", Namespace = "http://schemas.microsoft.com/embedded/2004/10/ImageUpdate")]
-        public string Type
+        public string? Type
         {
             get; set;
         }
         [XmlAttribute(AttributeName = "Value", Namespace = "http://schemas.microsoft.com/embedded/2004/10/ImageUpdate")]
-        public string Value
+        public string? Value
         {
             get; set;
         }

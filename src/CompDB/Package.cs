@@ -27,37 +27,37 @@ namespace UnifiedUpdatePlatform.Services.Composition.Database
     public class Package
     {
         [XmlAttribute(AttributeName = "ID", Namespace = "http://schemas.microsoft.com/embedded/2004/10/ImageUpdate")]
-        public string ID
+        public string? ID
         {
             get; set;
         }
         [XmlAttribute(AttributeName = "PackageType", Namespace = "http://schemas.microsoft.com/embedded/2004/10/ImageUpdate")]
-        public string PackageType
+        public string? PackageType
         {
             get; set;
         }
         [XmlElement(ElementName = "SatelliteInfo", Namespace = "http://schemas.microsoft.com/embedded/2004/10/ImageUpdate")]
-        public SatelliteInfo SatelliteInfo
+        public SatelliteInfo? SatelliteInfo
         {
             get; set;
         }
         [XmlElement(ElementName = "Payload", Namespace = "http://schemas.microsoft.com/embedded/2004/10/ImageUpdate")]
-        public Payload Payload
+        public Payload? Payload
         {
             get; set;
         }
         [XmlAttribute(AttributeName = "InstalledSize", Namespace = "http://schemas.microsoft.com/embedded/2004/10/ImageUpdate")]
-        public string InstalledSize
+        public string? InstalledSize
         {
             get; set;
         }
         [XmlAttribute(AttributeName = "Version", Namespace = "http://schemas.microsoft.com/embedded/2004/10/ImageUpdate")]
-        public string Version
+        public string? Version
         {
             get; set;
         }
         [XmlAttribute(AttributeName = "UpdateType", Namespace = "http://schemas.microsoft.com/embedded/2004/10/ImageUpdate")]
-        public string UpdateType
+        public string? UpdateType
         {
             get; set;
         }

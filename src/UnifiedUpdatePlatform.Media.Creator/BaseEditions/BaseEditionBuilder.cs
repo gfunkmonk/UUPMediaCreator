@@ -47,7 +47,7 @@ namespace UnifiedUpdatePlatform.Media.Creator.BaseEditions
             Common.Messaging.Common.CompressionType CompressionType,
             IEnumerable<CompDB> CompositionDatabases,
             TempManager tempManager,
-            ProgressCallback progressCallback = null)
+            ProgressCallback? progressCallback = null)
         {
             WimCompressionType compression = WimCompressionType.None;
             switch (CompressionType)
@@ -182,7 +182,7 @@ namespace UnifiedUpdatePlatform.Media.Creator.BaseEditions
             TempManager tempManager,
             bool keepVhd,
             out string vhdPath,
-            ProgressCallback progressCallback = null)
+            ProgressCallback? progressCallback = null)
         {
             vhdPath = null;
             WimCompressionType compression = WimCompressionType.None;
@@ -357,7 +357,7 @@ namespace UnifiedUpdatePlatform.Media.Creator.BaseEditions
             string EditionID,
             IEnumerable<CompDB> CompositionDatabases,
             TempManager tempManager,
-            ProgressCallback progressCallback = null)
+            ProgressCallback? progressCallback = null)
         {
             HashSet<string> ReferencePackages, referencePackagesToConvert;
             string BaseESD = null;

@@ -27,32 +27,32 @@ namespace UnifiedUpdatePlatform.Services.Composition.Database
     public class PayloadItem
     {
         [XmlAttribute(AttributeName = "PayloadHash", Namespace = "http://schemas.microsoft.com/embedded/2004/10/ImageUpdate")]
-        public string SourceHash
+        public string? SourceHash
         {
             get; set;
         }
         [XmlAttribute(AttributeName = "PayloadSize", Namespace = "http://schemas.microsoft.com/embedded/2004/10/ImageUpdate")]
-        public string PayloadSize
+        public string? PayloadSize
         {
             get; set;
         }
         [XmlAttribute(AttributeName = "Path", Namespace = "http://schemas.microsoft.com/embedded/2004/10/ImageUpdate")]
-        public string SourceName
+        public string? SourceName
         {
             get; set;
         }
         [XmlAttribute(AttributeName = "PayloadType", Namespace = "http://schemas.microsoft.com/embedded/2004/10/ImageUpdate")]
-        public string PayloadType
+        public string? PayloadType
         {
             get; set;
         }
         [XmlAttribute(AttributeName = "AltSourceName", Namespace = "http://schemas.microsoft.com/embedded/2004/10/ImageUpdate")]
-        public string AltSourceName
+        public string? AltSourceName
         {
             get; set;
         }
         [XmlAttribute(AttributeName = "AltSourceHash", Namespace = "http://schemas.microsoft.com/embedded/2004/10/ImageUpdate")]
-        public string AltSourceHash
+        public string? AltSourceHash
         {
             get; set;
         }

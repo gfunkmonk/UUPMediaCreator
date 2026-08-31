@@ -97,7 +97,7 @@ namespace UnifiedUpdatePlatform.Media.Creator
             string LanguageCode,
             IEnumerable<CompDB> CompositionDatabases,
             ProgressCallback? progressCallback = null,
-            string edition = null)
+            string? edition = null)
         {
             progressCallback?.Invoke(Common.Messaging.Common.ProcessPhase.ReadingMetadata, true, 0, "Looking up Composition Database in order to find a Base ESD image appropriate for building windows setup files.");
 

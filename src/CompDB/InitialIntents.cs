@@ -28,7 +28,7 @@ namespace UnifiedUpdatePlatform.Services.Composition.Database
     public class InitialIntents
     {
         [XmlElement(ElementName = "InitialIntent", Namespace = "http://schemas.microsoft.com/embedded/2004/10/ImageUpdate")]
-        public List<InitialIntent> InitialIntent
+        public List<InitialIntent>? InitialIntent
         {
             get; set;
         }

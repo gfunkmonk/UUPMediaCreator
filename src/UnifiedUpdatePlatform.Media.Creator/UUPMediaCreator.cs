@@ -106,7 +106,7 @@ namespace UnifiedUpdatePlatform.Media.Creator
             bool IsVirtual,
             Common.Messaging.Common.CompressionType CompressionType,
             TempManager tempManager,
-            ProgressCallback progressCallback = null)
+            ProgressCallback? progressCallback = null)
         {
             bool result = true;
 

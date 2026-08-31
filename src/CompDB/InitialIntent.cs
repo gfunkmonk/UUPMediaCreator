@@ -27,7 +27,7 @@ namespace UnifiedUpdatePlatform.Services.Composition.Database
     public class InitialIntent
     {
         [XmlAttribute(AttributeName = "Value", Namespace = "http://schemas.microsoft.com/embedded/2004/10/ImageUpdate")]
-        public string Value
+        public string? Value
         {
             get; set;
         }

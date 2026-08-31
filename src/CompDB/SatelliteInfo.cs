@@ -27,17 +27,17 @@ namespace UnifiedUpdatePlatform.Services.Composition.Database
     public class SatelliteInfo
     {
         [XmlElement(ElementName = "RequireInfo", Namespace = "http://schemas.microsoft.com/embedded/2004/10/ImageUpdate")]
-        public RequireInfo RequireInfo
+        public RequireInfo? RequireInfo
         {
             get; set;
         }
         [XmlElement(ElementName = "ApplyToInfo", Namespace = "http://schemas.microsoft.com/embedded/2004/10/ImageUpdate")]
-        public ApplyToInfo ApplyToInfo
+        public ApplyToInfo? ApplyToInfo
         {
             get; set;
         }
         [XmlElement(ElementName = "DeclareInfo", Namespace = "http://schemas.microsoft.com/embedded/2004/10/ImageUpdate")]
-        public DeclareInfo DeclareInfo
+        public DeclareInfo? DeclareInfo
         {
             get; set;
         }

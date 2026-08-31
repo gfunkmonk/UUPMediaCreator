@@ -27,47 +27,47 @@ namespace UnifiedUpdatePlatform.Services.Composition.Database
     public class Condition
     {
         [XmlAttribute(AttributeName = "Type", Namespace = "http://schemas.microsoft.com/embedded/2004/10/ImageUpdate")]
-        public string Type
+        public string? Type
         {
             get; set;
         }
         [XmlAttribute(AttributeName = "Name", Namespace = "http://schemas.microsoft.com/embedded/2004/10/ImageUpdate")]
-        public string Name
+        public string? Name
         {
             get; set;
         }
         [XmlAttribute(AttributeName = "FMID", Namespace = "http://schemas.microsoft.com/embedded/2004/10/ImageUpdate")]
-        public string FMID
+        public string? FMID
         {
             get; set;
         }
         [XmlAttribute(AttributeName = "Operator", Namespace = "http://schemas.microsoft.com/embedded/2004/10/ImageUpdate")]
-        public string Operator
+        public string? Operator
         {
             get; set;
         }
         [XmlAttribute(AttributeName = "RegistryKey", Namespace = "http://schemas.microsoft.com/embedded/2004/10/ImageUpdate")]
-        public string RegistryKey
+        public string? RegistryKey
         {
             get; set;
         }
         [XmlAttribute(AttributeName = "Value", Namespace = "http://schemas.microsoft.com/embedded/2004/10/ImageUpdate")]
-        public string Value
+        public string? Value
         {
             get; set;
         }
         [XmlAttribute(AttributeName = "RegistryKeyType", Namespace = "http://schemas.microsoft.com/embedded/2004/10/ImageUpdate")]
-        public string RegistryKeyType
+        public string? RegistryKeyType
         {
             get; set;
         }
         [XmlAttribute(AttributeName = "Status", Namespace = "http://schemas.microsoft.com/embedded/2004/10/ImageUpdate")]
-        public string Status
+        public string? Status
         {
             get; set;
         }
         [XmlAttribute(AttributeName = "FeatureStatus", Namespace = "http://schemas.microsoft.com/embedded/2004/10/ImageUpdate")]
-        public string FeatureStatus
+        public string? FeatureStatus
         {
             get; set;
         }

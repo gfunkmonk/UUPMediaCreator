@@ -28,7 +28,7 @@ namespace UnifiedUpdatePlatform.Services.Composition.Database
     public class AppxPackages
     {
         [XmlElement(ElementName = "Package", Namespace = "http://schemas.microsoft.com/embedded/2004/10/ImageUpdate")]
-        public List<AppxPackage> Package
+        public List<AppxPackage>? Package
         {
             get; set;
         }

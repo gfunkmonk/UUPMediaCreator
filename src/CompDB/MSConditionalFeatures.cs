@@ -28,7 +28,7 @@ namespace UnifiedUpdatePlatform.Services.Composition.Database
     public class MSConditionalFeatures
     {
         [XmlElement(ElementName = "ConditionalFeature", Namespace = "http://schemas.microsoft.com/embedded/2004/10/ImageUpdate")]
-        public List<ConditionalFeature> ConditionalFeature
+        public List<ConditionalFeature>? ConditionalFeature
         {
             get; set;
         }

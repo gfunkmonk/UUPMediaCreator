@@ -10,7 +10,7 @@ namespace UnifiedUpdatePlatform.Media.Creator.CDImage
             string OutputMediaPath,
             string OutputISOPath,
             bool suppressAnyKeyPrompt,
-            ProgressCallback progressCallback = null)
+            ProgressCallback? progressCallback = null)
         {
             bool result = true;
 
